@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:fontFamily="monospace"
+        android:text="Dynamic and Stylish Photo Frame"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText,SpUsage,TextSizeCheck">
+
+    </TextView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="339dp"
+        android:layout_height="313dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/pic3"
+            android:layout_width="230dp"
+            android:layout_height="302dp"
+            android:alpha="0"
+            android:importantForAccessibility="no"
+            app:srcCompat="@drawable/pic3"
+            tools:ignore="MissingConstraints,VisualLintBounds"
+            tools:layout_editor_absoluteX="40dp"
+            tools:layout_editor_absoluteY="6dp" />
+
+        <ImageView
+            android:id="@+id/pic0"
+            android:layout_width="230dp"
+            android:layout_height="302dp"
+            android:importantForAccessibility="no"
+            app:srcCompat="@drawable/pic0"
+            tools:ignore="MissingConstraints,ImageContrastCheck,VisualLintBounds"
+            tools:layout_editor_absoluteX="40dp"
+            tools:layout_editor_absoluteY="6dp" />
+
+        <ImageView
+            android:id="@+id/pic1"
+            android:layout_width="230dp"
+            android:layout_height="302dp"
+            android:alpha="0"
+            android:importantForAccessibility="no"
+            app:srcCompat="@drawable/pic1"
+            tools:ignore="MissingConstraints,VisualLintBounds"
+            tools:layout_editor_absoluteX="40dp"
+            tools:layout_editor_absoluteY="5dp" />
+
+        <ImageView
+            android:id="@+id/pic2"
+            android:layout_width="230dp"
+            android:layout_height="303dp"
+            android:alpha="0"
+            android:importantForAccessibility="no"
+            app:srcCompat="@drawable/pic2"
+            tools:ignore="MissingConstraints,VisualLintBounds"
+            tools:layout_editor_absoluteX="40dp"
+            tools:layout_editor_absoluteY="5dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bg"
+        android:layout_gravity="center"
+        android:padding="4dp"
+        android:text="Kabir Singh"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText,TextSizeCheck" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:id="@+id/imgPrev"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:background="@color/black"
+            android:contentDescription="TODO"
+            app:srcCompat="@android:drawable/ic_media_rew"
+            tools:ignore="ContentDescription,HardcodedText,ImageContrastCheck" />
+
+        <ImageButton
+            android:id="@+id/imgNext"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:background="@color/black"
+            android:importantForAccessibility="no"
+            app:srcCompat="@android:drawable/ic_media_ff"
+            tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
+    </LinearLayout>
+
+
+</LinearLayout>
